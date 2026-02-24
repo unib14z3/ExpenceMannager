@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <span>
+        <h1>Expence Mannager</h1>
+        <div>Add Expence</div> 
+    </span>
+    <hr>
+    <div class="container">
+        <div class="card", id="infograph">
+            <div id="pie-chart">
+                PIE CHART
+            </div>
+            <div class="week">
+            <div class="week-card", id="week1">
+                <h3>week1</h3>
+                slider
+                value
+            </div>
+
+            <div class="week-card",id="week2">
+                <h3>week2</h3>
+                slider
+                value
+            </div>
+
+            <div class="week-card",id="week3">
+                <h3>week3</h3>
+                slider
+                value
+            </div>
+
+            <div class="week-card",id="week4">
+                <h3>week4</h3>
+                slider
+                value
+            </div>
+            </div>
+        </div>
+
+        <div class="card",id="at-glance">
+            <div class="ag-card", id="top-tags">
+                <div>
+                    1. tag 1 
+                    slider
+                    value
+                </div>
+                <div>
+                    2. tag 2 
+                    slider
+                    value
+                </div>
+                <div>
+                    3. tag 3
+                    slider
+                    value
+                </div>
+            </div>
+            <div class="ag-card",, id="graph">
+            </div>
+            <div class="ag-card",>
+                Money Lent
+                Money Loaned 
+            </div>
+        </div>
+    </div>
+    
+
+    <main class="main">
+        <section class="panel">
+            <h2>Add Expense</h2>
+            <form id="expense-form">
+                <div class="row">
+                    <label for="desc">Description</label>
+                    <input id="desc" name="description" required />
+                </div>
+                <div class="row">
+                    <label for="amount">Amount (₹)</label>
+                    <input id="amount" name="amount" type="number" step="0.01" min="0" required />
+                </div>
+                <div class="row">
+                    <label for="date">Date</label>
+                    <input id="date" name="date" type="date" required />
+                </div>
+                <div class="row">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option>Education</option>
+                        <option>Entertainment</option>
+                        <option>Travel</option>
+                        <option>Food</option>
+                        <option>Mislenious</option>
+                        <option>Rent</option>
+                    </select>
+                </div>
+                <div class="row actions">
+                    <button type="submit" id="save-btn">Add</button>
+                    <button type="button" id="clear-btn">Clear</button>
+                </div>
+            </form>
+
+            <div class="totals">
+                <strong>Total:</strong> <span id="total">₹0.00</span>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Expenses</h2>
+            <ul id="expense-list" class="list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

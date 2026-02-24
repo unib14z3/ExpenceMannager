@@ -1,0 +1,134 @@
+
+body{
+    background-color: #090040;
+    color: whitesmoke;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px ;
+    gap: 2px;
+}
+.card{
+    background-color:#471396;
+    border-radius: 10px;
+}
+#infograph{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+#pie-chart{
+    grid-column: 1/4;
+    grid-row:1/4
+}
+
+
+.week{
+    grid-column: 4/5;
+    grid-row: 1/5
+}
+.week-card{
+    background-color: #5b5bff;
+    border-radius: 10px;
+}
+
+
+
+.at-glance{
+    display: grid;
+    grid-template-rows: 133px 133px 133px ;
+    gap: 10px;
+}
+.ag-card{
+    height: 100px;
+    border-radius: 10px;
+    background-color:#5b5bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+*{box-sizing:border-box}
+.main{
+    display:flex;
+    gap:16px;
+    padding:16px;
+    flex-wrap:wrap
+}
+
+.panel{
+    background: linear-gradient(180deg,#0d0a2a,#141033);
+    padding:16px;
+    border-radius:8px;
+    flex:1 1 320px;
+    min-width:280px
+}
+
+h1{
+    margin:12px 16px
+}
+
+form .row{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:8px
+}
+
+label{
+    font-size:0.9rem;
+    margin-bottom:6px
+}
+
+input,select{
+    padding:8px;
+    border-radius:6px;
+    border:1px solid #2b2b5a;
+    background:#070528;
+    color:whitesmoke
+}
+
+.actions{
+    display:flex;
+    gap:8px
+}
+
+button{
+    padding:8px 12px;
+    border-radius:6px;border:none;background:#5b5bff;color:#fff;cursor:pointer}
+.list{
+    list-style:none;
+    padding:0;
+    margin:0
+}
+
+.item{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 8px;
+    border-bottom:1px solid rgba(255,255,255,0.04)
+}
+
+.item-left{
+    max-width:70%
+}
+
+.desc{
+    font-weight:600
+}
+
+.meta{font-size:0.85rem;color:rgba(255,255,255,0.6)}
+.amount{font-weight:700}
+.buttons button{margin-left:6px;background:#333;border-radius:6px}
+.totals{margin-top:12px;font-size:1.1rem}
+
+@media(max-width:600px){
+    .main{flex-direction:column}
+}
