@@ -1,3 +1,7 @@
+*{
+    margin:0;
+    padding:0;
+}
 
 body{
     background-color: #090040;
@@ -5,45 +9,71 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: 200px 200px 200px ;
-    gap: 2px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 10px;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 5px;
 }
 .card{
     background-color:#471396;
     border-radius: 10px;
 }
+
 #infograph{
     grid-column: 1/3;
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
 }
 #pie-chart{
     grid-column: 1/4;
-    grid-row:1/4
+    grid-row:2/6;
+
+    background-color: #5b5bff;
+    border-radius: 10px
 }
 
 
 .week{
     grid-column: 4/5;
-    grid-row: 1/5
+    grid-row: 2/6;
+
+    display: grid;
+    gap: 5px;
 }
 .week-card{
+    display: grid;
+    justify-items: top;
+    place-items:end;
+
+    height: 75px;
+
+    min-height: 0;
+    min-width: 0;
+
     background-color: #5b5bff;
     border-radius: 10px;
+
 }
 
 
-
-.at-glance{
+#at-glance{
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: grid;
-    grid-template-rows: 133px 133px 133px ;
-    gap: 10px;
+    grid-template-rows: repeat(3,1fr);
+
+    align-items: center;
 }
 .ag-card{
     height: 100px;
     border-radius: 10px;
     background-color:#5b5bff;
+    display: grid;
+    place-items: center;
+;
 }
 
 
